@@ -30,7 +30,19 @@ export default {
       animation: {
         "fade-up": "fade-up 0.5s ease-out forwards",
       },
+      textShadow: {
+        DEFAULT: '2px 2px 4px rgba(0, 0, 0, 0.3)',
+      },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    function ({ addUtilities }) {
+      addUtilities({
+        '.text-shadow': {
+          'text-shadow': '2px 2px 4px rgba(0, 0, 0, 0.3)',
+        },
+      });
+    },
+  ],
 } satisfies Config;
