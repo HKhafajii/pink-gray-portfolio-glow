@@ -134,26 +134,26 @@ const projects = [
     title: "MidnightGolf",
     description: "• Developed a full-stack iOS app using SwiftUI, Firebase, and MVVM, providing underserved high school students with access to resources like scholarships, event info, and dining etiquette guides. Integrated Firebase Authentication, Firestore, and Firebase Messaging for secure login, real-time data sync. Applied Dependency Injection to ensure modular, testable architecture and improved maintainability. Designed a user-friendly interface tailored for students, enhancing engagement while collaborating in an Agile workflow.",
     technologies: ["SwiftUI", "Firebase", "Objective-C"],
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
+    image: "/placeholder.svg",
   },
  
   {
     title: "Smart Facial Recognition Display",
     description: "Utilized Haar cascades and Local Binary Patterns Histograms for facial recognition and training the system to recognize individual family members based on stored image datasets. Implemented the computer vision pipeline using OpenCV in C++ to perform real-time face detection and recognition with high accuracy and low latency on a Raspberry Pi. Demonstrated hardware-software integration, including camera module setup, power regulation, and modular component testing.",
     technologies: ["C++", "OpenCV", "Matplotlib", "FastAPI", "Raspberry Pi"],
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
+    image: "/placeholder.svg",
   },
   {
     title: "MemoriaAR",
     description: "• Integrated MVVM architecture to take voice recordings using AVfoundation, images using PhotosUI, and implement them into a data model using Swift programming language.Designed an intuitive user interface using Apple’s HIG guidelines to create a seamless user experience, also making it accessible for different user groups that was tested by 50+ beta users.",
     technologies: ["Python", "Django", "SwiftUI", "MySQL"],
-    image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80",
+    image: "/placeholder.svg",
   },
   {
     title: "iMower",
     description: "Integrated a suite of sensors including ultrasonic distance sensors, bump switches, and gyroscopes to enable real-time obstacle detection, collision prevention, and orientation correction using VEX hardware. Developed the autonomous control system in C++, implementing PID algorithms to maintain precise motor control for straight-line travel, smooth turns across varying terrain, and a fail safe system that instantly stops motor function. Earned 2nd place out of 30+ teams in Henry Ford College’s Engineering Competition based on technical execution.",
     technologies: ["C++", "VEX", "Embedded Systems"],
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+    image: "/placeholder.svg",
   },
  
 ];
