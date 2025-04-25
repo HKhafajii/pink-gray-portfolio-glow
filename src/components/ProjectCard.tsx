@@ -19,7 +19,7 @@ const ProjectCard = ({
   return (
     <div 
       className={cn(
-        "bg-white rounded-lg shadow-lg p-6 h-[650px] w-full transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl",
+        "bg-white rounded-lg shadow-lg p-6 h-[700px] w-full transform transition-all duration-300 hover:scale-[1.02] hover:shadow-xl",
         className
       )}
     >
