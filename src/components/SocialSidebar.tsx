@@ -1,6 +1,5 @@
 
 import { Github, Linkedin, Twitter, Instagram, Mail } from "lucide-react";
-import { cn } from "@/lib/utils";
 
 const SocialSidebar = () => {
   const socials = [
@@ -12,12 +11,12 @@ const SocialSidebar = () => {
   ];
 
   return (
-    <div className="fixed left-8 top-1/2 -translate-y-1/2 space-y-6">
+    <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center justify-center space-x-6">
       {socials.map((social) => (
         <a
           key={social.label}
           href={social.href}
-          className="block text-primary hover:text-accent transition-colors"
+          className="text-secondary hover:text-accent transition-colors"
           aria-label={social.label}
         >
           <social.icon className="w-6 h-6" />

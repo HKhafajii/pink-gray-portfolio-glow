@@ -1,9 +1,11 @@
-
 import { useEffect, useRef } from "react";
+import { Download } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import SocialSidebar from "@/components/SocialSidebar";
 import ProjectCard from "@/components/ProjectCard";
 import ExperienceItem from "@/components/ExperienceItem";
 import ContactForm from "@/components/ContactForm";
+import Navigation from "@/components/Navigation";
 
 const Index = () => {
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -28,23 +30,45 @@ const Index = () => {
     return () => observerRef.current?.disconnect();
   }, []);
 
+  const handleDownloadResume = () => {
+    const resumeUrl = "/resume.pdf";
+    window.open(resumeUrl, "_blank");
+  };
+
   return (
-    <div className="min-h-screen bg-primary">
+    <div className="min-h-screen bg-primary pt-16">
+      <Navigation />
       <SocialSidebar />
       
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center px-4 fade-in opacity-0">
-        <div className="text-left max-w-4xl">
-          <h1 className="text-6xl font-bold text-secondary mb-4">Hi, I'm</h1>
-          <h2 className="text-8xl font-bold text-accent mb-6">Your Name.</h2>
-          <p className="text-2xl text-secondary/80">
-            I'm a Software Engineer focused on building beautiful interfaces & experiences.
-          </p>
+      <section id="home" className="min-h-[calc(100vh-4rem)] flex items-center justify-center px-4 fade-in opacity-0">
+        <div className="flex items-center gap-8 max-w-4xl w-full">
+          <div className="text-left flex-1">
+            <h1 className="text-6xl font-bold text-secondary mb-4">Hi, I'm</h1>
+            <h2 className="text-8xl font-bold text-accent mb-6">Your Name.</h2>
+            <p className="text-2xl text-secondary/80 mb-8">
+              I'm a Software Engineer focused on building beautiful interfaces & experiences.
+            </p>
+            <Button 
+              onClick={handleDownloadResume}
+              className="bg-accent text-black hover:bg-accent/90"
+            >
+              <Download className="w-4 h-4 mr-2" />
+              Download Resume
+            </Button>
+          </div>
+          <div className="w-64 h-64 bg-secondary/10 rounded-full flex-shrink-0">
+            <img
+              src="/placeholder.svg"
+              alt="Your Name"
+              className="w-full h-full object-cover rounded-full"
+            />
+          </div>
         </div>
       </section>
 
       {/* Projects Section */}
-      <section className="bg-secondary py-20 px-4">
+      <section id="projects" className="bg-secondary py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-6xl font-bold text-primary mb-12 fade-in opacity-0">
             Projects.
@@ -60,7 +84,7 @@ const Index = () => {
       </section>
 
       {/* Experience Section */}
-      <section className="py-20 px-4">
+      <section id="experience" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-6xl font-bold text-secondary mb-12 fade-in opacity-0">
             Experience.
@@ -76,7 +100,7 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="bg-secondary py-20 px-4">
+      <section id="contact" className="bg-secondary py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-6xl font-bold text-primary mb-12 fade-in opacity-0">
             Let's connect.
@@ -101,8 +125,14 @@ const projects = [
     title: "Project One",
     description: "A description of your first project goes here.",
     technologies: ["React", "TypeScript", "Tailwind"],
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
   },
-  // Add more projects as needed
+  {
+    title: "Project Two",
+    description: "A description of your second project goes here.",
+    technologies: ["React", "TypeScript", "Node.js"],
+    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+  },
 ];
 
 const experience = [
@@ -113,7 +143,6 @@ const experience = [
     description: "Description of your role and achievements.",
     technologies: ["React", "TypeScript", "Node.js"],
   },
-  // Add more experience items as needed
 ];
 
 export default Index;
