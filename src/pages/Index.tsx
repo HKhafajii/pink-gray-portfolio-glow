@@ -47,7 +47,7 @@ const Index = () => {
             <h1 className="text-6xl font-bold text-secondary mb-4">Hi, I'm</h1>
             <h2 className="text-8xl font-bold text-accent mb-6 drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)]">Hassan Alkhafaji.</h2>
             <p className="text-2xl text-secondary/80 mb-8">
-              I'm a Software Engineer focused on building beautiful interfaces & experiences.
+              I'm a Software Engineer focused on building on Apple's ecosystem and Autonomous Robotics.
             </p>
             <Button 
               onClick={handleDownloadResume}
@@ -132,26 +132,26 @@ const Index = () => {
 const projects = [
   {
     title: "MidnightGolf",
-    description: "• Developed a full-stack iOS app using SwiftUI, Firebase, and MVVM, providing underserved high school students with access to resources like scholarships, event info, and dining etiquette guides. Integrated Firebase Authentication, Firestore, and Firebase Messaging for secure login, real-time data sync. Applied Dependency Injection to ensure modular, testable architecture and improved maintainability. Designed a user-friendly interface tailored for students, enhancing engagement while collaborating in an Agile workflow.",
+    description: "Developed a full-stack iOS app with SwiftUI, Firebase, and MVVM, featuring secure authentication, real-time data sync, modular architecture, and a student-focused UI to deliver resources like scholarships and events in an Agile team setting.",
     technologies: ["SwiftUI", "Firebase", "Objective-C"],
     image: "/placeholder.svg",
   },
  
   {
     title: "Smart Facial Recognition Display",
-    description: "Utilized Haar cascades and Local Binary Patterns Histograms for facial recognition and training the system to recognize individual family members based on stored image datasets. Implemented the computer vision pipeline using OpenCV in C++ to perform real-time face detection and recognition with high accuracy and low latency on a Raspberry Pi. Demonstrated hardware-software integration, including camera module setup, power regulation, and modular component testing.",
+    description: "Built a real-time facial recognition system on a Raspberry Pi using Haar cascades, LBPH, and OpenCV in C++, integrating camera hardware and power management for a high-accuracy, low-latency solution.",
     technologies: ["C++", "OpenCV", "Matplotlib", "FastAPI", "Raspberry Pi"],
     image: "/placeholder.svg",
   },
   {
     title: "MemoriaAR",
-    description: "• Integrated MVVM architecture to take voice recordings using AVfoundation, images using PhotosUI, and implement them into a data model using Swift programming language.Designed an intuitive user interface using Apple’s HIG guidelines to create a seamless user experience, also making it accessible for different user groups that was tested by 50+ beta users.",
+    description: "Built a Swift app using MVVM to capture voice recordings with AVFoundation and images with PhotosUI, integrating them into a data model with an intuitive, accessible UI designed per Apple’s HIG and tested by 50+ beta users.",
     technologies: ["Python", "Django", "SwiftUI", "MySQL"],
     image: "/placeholder.svg",
   },
   {
     title: "iMower",
-    description: "Integrated a suite of sensors including ultrasonic distance sensors, bump switches, and gyroscopes to enable real-time obstacle detection, collision prevention, and orientation correction using VEX hardware. Developed the autonomous control system in C++, implementing PID algorithms to maintain precise motor control for straight-line travel, smooth turns across varying terrain, and a fail safe system that instantly stops motor function. Earned 2nd place out of 30+ teams in Henry Ford College’s Engineering Competition based on technical execution.",
+    description: "Engineered an autonomous VEX robot using C++ with integrated sensors and PID control for real-time obstacle detection, smooth navigation, and fail-safe operation, earning 2nd place out of 30+ teams at Henry Ford College’s Engineering Competition.",
     technologies: ["C++", "VEX", "Embedded Systems"],
     image: "/placeholder.svg",
   },
