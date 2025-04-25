@@ -3,11 +3,9 @@ import { Github, Linkedin, Twitter, Instagram, Mail } from "lucide-react";
 
 const SocialSidebar = () => {
   const socials = [
-    { icon: Github, href: "https://github.com/halkhafaji", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com/in/halkhafaji", label: "LinkedIn" },
-    { icon: Twitter, href: "https://twitter.com/halkhafaji", label: "Twitter" },
-    { icon: Instagram, href: "https://instagram.com/halkhafaji", label: "Instagram" },
-    { icon: Mail, href: "mailto:hassan@alkhafaji.dev", label: "Email" },
+    { icon: Github, href: "https://github.com/HKhafajii", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/hassan-alkhafaji/", label: "LinkedIn" },
+    { icon: Mail, href: "mailto:alkhafajihassan@gmail.com", label: "Email" },
   ];
 
   return (

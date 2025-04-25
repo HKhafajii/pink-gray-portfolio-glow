@@ -109,19 +109,13 @@ const Index = () => {
                 like to say hello, send me a message. I'd love to hear from you.
               </p>
               <div className="flex items-center space-x-6">
-                <a href="https://github.com/halkhafaji" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors">
+                <a href="https://github.com/HKhafajii" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors">
                   <Github className="w-8 h-8" />
                 </a>
-                <a href="https://linkedin.com/in/halkhafaji" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors">
+                <a href="https://www.linkedin.com/in/hassan-alkhafaji/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors">
                   <Linkedin className="w-8 h-8" />
                 </a>
-                <a href="https://twitter.com/halkhafaji" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors">
-                  <Twitter className="w-8 h-8" />
-                </a>
-                <a href="https://instagram.com/halkhafaji" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors">
-                  <Instagram className="w-8 h-8" />
-                </a>
-                <a href="mailto:hassan@alkhafaji.dev" className="text-primary hover:text-accent transition-colors">
+                <a href="mailto:alkhafajihassan@gmail.com" className="text-primary hover:text-accent transition-colors">
                   <Mail className="w-8 h-8" />
                 </a>
               </div>
