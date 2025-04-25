@@ -1,4 +1,3 @@
-
 import {
   Carousel,
   CarouselContent,
@@ -56,10 +55,9 @@ const ProjectCarousel = ({ projects }: ProjectCarouselProps) => {
           ))}
         </CarouselContent>
         
-        {/* Move the navigation buttons inside the Carousel component */}
         <div className="flex justify-center gap-4 mt-8">
-          <CarouselPrevious className="static bg-accent hover:bg-accent/90 text-white" />
-          <CarouselNext className="static bg-accent hover:bg-accent/90 text-white" />
+          <CarouselPrevious className="static bg-accent hover:bg-accent/90 text-white shadow-[0_4px_12px_rgba(0,0,0,0.2)]" />
+          <CarouselNext className="static bg-accent hover:bg-accent/90 text-white shadow-[0_4px_12px_rgba(0,0,0,0.2)]" />
         </div>
       </Carousel>
     </div>

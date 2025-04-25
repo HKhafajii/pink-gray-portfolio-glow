@@ -24,7 +24,7 @@ const ContactForm = () => {
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full"
+          className="w-full shadow-[0_2px_8px_rgba(0,0,0,0.1)]"
           required
         />
       </div>
@@ -36,7 +36,7 @@ const ContactForm = () => {
           id="message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          className="w-full min-h-[150px]"
+          className="w-full min-h-[150px] shadow-[0_2px_8px_rgba(0,0,0,0.1)]"
           required
         />
       </div>
