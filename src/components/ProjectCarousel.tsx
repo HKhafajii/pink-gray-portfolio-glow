@@ -55,11 +55,13 @@ const ProjectCarousel = ({ projects }: ProjectCarouselProps) => {
             </CarouselItem>
           ))}
         </CarouselContent>
+        
+        {/* Move the navigation buttons inside the Carousel component */}
+        <div className="flex justify-center gap-4 mt-8">
+          <CarouselPrevious className="static bg-accent hover:bg-accent/90 text-white" />
+          <CarouselNext className="static bg-accent hover:bg-accent/90 text-white" />
+        </div>
       </Carousel>
-      <div className="flex gap-4 mt-4">
-        <CarouselPrevious className="relative static bg-accent hover:bg-accent/90 text-white" />
-        <CarouselNext className="relative static bg-accent hover:bg-accent/90 text-white" />
-      </div>
     </div>
   );
 };
