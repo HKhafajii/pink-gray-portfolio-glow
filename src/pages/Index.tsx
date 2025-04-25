@@ -32,7 +32,7 @@ const Index = () => {
   }, []);
 
   const handleDownloadResume = () => {
-    const resumeUrl = "/Hassan_Alkhafji_Resume.pdf";
+    const resumeUrl = "/Hassan_Alkhafaji_Resume.pdf";
     window.open(resumeUrl, "_blank");
   };
 
@@ -60,7 +60,7 @@ const Index = () => {
           </div>
           <div className="w-64 h-64 bg-secondary/10 rounded-full flex-shrink-0">
             <img
-              src="/headshot.jpg"
+              src="/headshot.jpeg"
               alt="Your Name"
               className="w-full h-full object-cover rounded-full"
             />
