@@ -12,6 +12,8 @@ export default {
         primary: "#666370",
         secondary: "#F5F9E9",
         border: "hsl(var(--border))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
       },
       keyframes: {
         "fade-up": {
