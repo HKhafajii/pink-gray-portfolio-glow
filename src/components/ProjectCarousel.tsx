@@ -39,27 +39,27 @@ const ProjectCarousel = ({ projects }: ProjectCarouselProps) => {
   }, [emblaApi]);
 
   return (
-    <div className="relative">
+    <div className="relative flex flex-col items-center gap-8">
       <Carousel 
         opts={{ 
           align: "center",
           loop: true,
           slidesToScroll: 2
         }}
-        className="w-full max-w-5xl mx-auto"
+        className="w-full max-w-5xl"
       >
         <CarouselContent ref={emblaRef}>
           {projects.map((project) => (
-            <CarouselItem key={project.title} className="md:basis-1/2 lg:basis-1/2">
-              <div className="p-1">
-                <ProjectCard {...project} />
-              </div>
+            <CarouselItem key={project.title} className="md:basis-1/2 lg:basis-1/2 p-4">
+              <ProjectCard {...project} />
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="absolute left-4 bg-white/20 hover:bg-white/60 transition-colors" />
-        <CarouselNext className="absolute right-4 bg-white/20 hover:bg-white/60 transition-colors" />
       </Carousel>
+      <div className="flex gap-4 mt-4">
+        <CarouselPrevious className="relative static bg-accent hover:bg-accent/90 text-white" />
+        <CarouselNext className="relative static bg-accent hover:bg-accent/90 text-white" />
+      </div>
     </div>
   );
 };
