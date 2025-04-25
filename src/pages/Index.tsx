@@ -39,15 +39,6 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-primary pt-16">
       <Navigation />
-      <a href="https://github.com/HKhafajii" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors">
-                  <Github className="w-8 h-8" />
-                </a>
-                <a href="https://www.linkedin.com/in/hassan-alkhafaji/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors">
-                  <Linkedin className="w-8 h-8" />
-                </a>
-                <a href="mailto:alkhafajihassan@gmail.com" className="text-primary hover:text-accent transition-colors">
-                  <Mail className="w-8 h-8" />
-                </a>
       
       {/* Hero Section */}
       <section id="home" className="min-h-[calc(100vh-4rem)] flex items-center justify-center px-4 fade-in opacity-0">
