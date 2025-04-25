@@ -6,6 +6,7 @@ import ProjectCard from "@/components/ProjectCard";
 import ExperienceItem from "@/components/ExperienceItem";
 import ContactForm from "@/components/ContactForm";
 import Navigation from "@/components/Navigation";
+import ProjectCarousel from "@/components/ProjectCarousel";
 
 const Index = () => {
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -73,12 +74,8 @@ const Index = () => {
           <h2 className="text-6xl font-bold text-primary mb-12 fade-in opacity-0">
             Projects.
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            {projects.map((project, index) => (
-              <div key={project.title} className="fade-in opacity-0">
-                <ProjectCard {...project} />
-              </div>
-            ))}
+          <div className="fade-in opacity-0">
+            <ProjectCarousel projects={projects} />
           </div>
         </div>
       </section>

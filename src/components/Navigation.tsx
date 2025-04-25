@@ -17,7 +17,7 @@ const Navigation = () => {
             <li key={item.label}>
               <a
                 href={item.href}
-                className="text-secondary hover:text-accent transition-colors"
+                className="text-accent hover:text-accent/80 transition-colors"
               >
                 {item.label}
               </a>
