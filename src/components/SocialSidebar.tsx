@@ -10,18 +10,15 @@ const SocialSidebar = () => {
 
   return (
     <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center justify-center space-x-6">
-      {socials.map((social) => (
-        <a
-          key={social.label}
-          href={social.href}
-          className="text-secondary hover:text-accent transition-colors"
-          aria-label={social.label}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <social.icon className="w-6 h-6" />
-        </a>
-      ))}
+        <a href="https://github.com/HKhafajii" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors">
+                  <Github className="w-8 h-8" />
+                </a>
+                <a href="https://www.linkedin.com/in/hassan-alkhafaji/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors">
+                  <Linkedin className="w-8 h-8" />
+                </a>
+                <a href="mailto:alkhafajihassan@gmail.com" className="text-primary hover:text-accent transition-colors">
+                  <Mail className="w-8 h-8" />
+                </a>
     </div>
   );
 };
