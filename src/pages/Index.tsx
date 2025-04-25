@@ -32,7 +32,7 @@ const Index = () => {
   }, []);
 
   const handleDownloadResume = () => {
-    const resumeUrl = "/resume.pdf";
+    const resumeUrl = "/Hassan_Alkhafji_Resume.pdf";
     window.open(resumeUrl, "_blank");
   };
 
