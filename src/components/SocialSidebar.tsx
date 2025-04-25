@@ -3,11 +3,11 @@ import { Github, Linkedin, Twitter, Instagram, Mail } from "lucide-react";
 
 const SocialSidebar = () => {
   const socials = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Mail, href: "#", label: "Email" },
+    { icon: Github, href: "https://github.com/halkhafaji", label: "GitHub" },
+    { icon: Linkedin, href: "https://linkedin.com/in/halkhafaji", label: "LinkedIn" },
+    { icon: Twitter, href: "https://twitter.com/halkhafaji", label: "Twitter" },
+    { icon: Instagram, href: "https://instagram.com/halkhafaji", label: "Instagram" },
+    { icon: Mail, href: "mailto:hassan@alkhafaji.dev", label: "Email" },
   ];
 
   return (
@@ -18,6 +18,8 @@ const SocialSidebar = () => {
           href={social.href}
           className="text-secondary hover:text-accent transition-colors"
           aria-label={social.label}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <social.icon className="w-6 h-6" />
         </a>
