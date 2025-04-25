@@ -165,25 +165,25 @@ const projects = [
 
 const experience = [
   {
-    title: "Senior Software Engineer",
-    company: "Tech Corp",
-    period: "2022 - Present",
-    description: "Leading development of enterprise applications and mentoring junior developers.",
-    technologies: ["React", "TypeScript", "Node.js"],
+    title: "iOS Engineering Intern",
+    company: "Apple Developer Academy",
+    period: "2024 - Present",
+    description: "Developing and deploying two full-stack iOS applications (iPhone and iPad) using SwiftUI and Firebase. Implementing Firebase Authentication, Firestore, and Cloud Functions to manage user data and real-time updates, ensuring secure and efficient backend operations with 1000+ underprivileged students. Conducting unit and UI testing to ensure application stability and performance across various iOS devices. Conducted comprehensive unit and UI testing across multiple iOS devices, ensuring application stability, performance, and accessibility by integrating inclusive features like VoiceOver and Dynamic Type.",
+    technologies: ["SwiftUI", "Firebase", "Objective-C"],
   },
   {
-    title: "Full Stack Developer",
-    company: "Digital Solutions Inc",
-    period: "2020 - 2022",
-    description: "Developed and maintained multiple web applications using modern technologies.",
-    technologies: ["React", "Python", "PostgreSQL"],
+    title: "Adjunct Instructor",
+    company: "Henry Ford College",
+    period: "2025 - Present",
+    description: "• Instructing 20+ students in mastering Apple’s ecosystem through challenge-based learning in Swift and SwiftUI. Assess and troubleshoot technical issues brought by students, faculty, and staff, from code bugs to device configuration. Develop and review complex student projects, providing guidance on architecture, debugging, and best practices.",
+    technologies: ["Swift", "SwiftUI", "Xcode"],
   },
   {
-    title: "Frontend Developer",
-    company: "StartUp Co",
-    period: "2018 - 2020",
-    description: "Built responsive user interfaces and implemented complex frontend features.",
-    technologies: ["Vue.js", "JavaScript", "CSS"],
+    title: "Software Engineering Intern",
+    company: "BeAware Deaf Assistant",
+    period: "2023 - 2025",
+    description: "• Implemented machine learning models using CoreML and PyTorch to increase transcription accuracy by 12%. Coordinated intensive testing and debugging to ensure reliability across environments reducing latency by 20%. Provided closed captioning tech support to 10+ conferences across the U.S and Canada, including AV equipment.",
+    technologies: ["Python", "Swift", "ML/AI"],
   },
 ];
 
