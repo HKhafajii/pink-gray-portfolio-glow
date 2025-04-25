@@ -46,7 +46,7 @@ const Index = () => {
         <div className="flex items-center gap-8 max-w-4xl w-full">
           <div className="text-left flex-1">
             <h1 className="text-6xl font-bold text-secondary mb-4">Hi, I'm</h1>
-            <h2 className="text-8xl font-bold text-accent mb-6">Your Name.</h2>
+            <h2 className="text-8xl font-bold text-accent mb-6">Hassan Alkhafaji.</h2>
             <p className="text-2xl text-secondary/80 mb-8">
               I'm a Software Engineer focused on building beautiful interfaces & experiences.
             </p>
@@ -60,7 +60,7 @@ const Index = () => {
           </div>
           <div className="w-64 h-64 bg-secondary/10 rounded-full flex-shrink-0">
             <img
-              src="/placeholder.svg"
+              src="/headshot.jpg"
               alt="Your Name"
               className="w-full h-full object-cover rounded-full"
             />
