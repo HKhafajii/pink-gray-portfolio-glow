@@ -45,7 +45,7 @@ const Index = () => {
         <div className="flex items-center gap-8 max-w-4xl w-full">
           <div className="text-left flex-1">
             <h1 className="text-6xl font-bold text-secondary mb-4">Hi, I'm</h1>
-            <h2 className="text-8xl font-bold text-accent mb-6 drop-shadow-[0_4px_8px_rgba(244,91,105,0.5)]">Hassan Alkhafaji.</h2>
+            <h2 className="text-8xl font-bold text-accent mb-6 drop-shadow-[0_4px_8px_rgba(0,0,0,4)]">Hassan Alkhafaji.</h2>
             <p className="text-2xl text-secondary/80 mb-8">
               I'm a Software Engineer focused on building beautiful interfaces & experiences.
             </p>
