@@ -11,6 +11,7 @@ export default {
         accent: "#F45B69",
         primary: "#666370",
         secondary: "#F5F9E9",
+        border: "hsl(var(--border))",
       },
       keyframes: {
         "fade-up": {
