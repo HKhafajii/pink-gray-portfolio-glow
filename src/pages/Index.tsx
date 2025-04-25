@@ -155,15 +155,35 @@ const projects = [
     technologies: ["React", "Next.js", "MongoDB"],
     image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80",
   },
+  {
+    title: "Project Four",
+    description: "A description of your fourth project goes here.",
+    technologies: ["Vue.js", "Firebase", "Tailwind"],
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
+  },
 ];
 
 const experience = [
   {
-    title: "Software Engineer",
-    company: "Company Name",
+    title: "Senior Software Engineer",
+    company: "Tech Corp",
     period: "2022 - Present",
-    description: "Description of your role and achievements.",
+    description: "Leading development of enterprise applications and mentoring junior developers.",
     technologies: ["React", "TypeScript", "Node.js"],
+  },
+  {
+    title: "Full Stack Developer",
+    company: "Digital Solutions Inc",
+    period: "2020 - 2022",
+    description: "Developed and maintained multiple web applications using modern technologies.",
+    technologies: ["React", "Python", "PostgreSQL"],
+  },
+  {
+    title: "Frontend Developer",
+    company: "StartUp Co",
+    period: "2018 - 2020",
+    description: "Built responsive user interfaces and implemented complex frontend features.",
+    technologies: ["Vue.js", "JavaScript", "CSS"],
   },
 ];
 
