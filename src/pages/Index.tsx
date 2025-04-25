@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { Download } from "lucide-react";
+import { Download, Github, Linkedin, Twitter, Instagram, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import SocialSidebar from "@/components/SocialSidebar";
 import ProjectCard from "@/components/ProjectCard";
@@ -99,15 +99,34 @@ const Index = () => {
       {/* Contact Section */}
       <section id="contact" className="bg-secondary py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-6xl font-bold text-primary mb-12 fade-in opacity-0">
-            Let's connect.
-          </h2>
-          <div className="flex justify-between items-start">
-            <div className="max-w-md fade-in opacity-0">
-              <p className="text-primary/80 mb-8">
+          <div className="flex flex-col md:flex-row justify-between items-start gap-12">
+            <div className="flex-1 fade-in opacity-0">
+              <h2 className="text-6xl font-bold text-primary mb-8">
+                Let's connect.
+              </h2>
+              <p className="text-primary/80 text-lg mb-12">
                 If you want to know more about me or my work, or if you would just
                 like to say hello, send me a message. I'd love to hear from you.
               </p>
+              <div className="flex items-center space-x-6">
+                <a href="#" className="text-primary hover:text-accent transition-colors">
+                  <Github className="w-8 h-8" />
+                </a>
+                <a href="#" className="text-primary hover:text-accent transition-colors">
+                  <Linkedin className="w-8 h-8" />
+                </a>
+                <a href="#" className="text-primary hover:text-accent transition-colors">
+                  <Twitter className="w-8 h-8" />
+                </a>
+                <a href="#" className="text-primary hover:text-accent transition-colors">
+                  <Instagram className="w-8 h-8" />
+                </a>
+                <a href="#" className="text-primary hover:text-accent transition-colors">
+                  <Mail className="w-8 h-8" />
+                </a>
+              </div>
+            </div>
+            <div className="flex-1 fade-in opacity-0">
               <ContactForm />
             </div>
           </div>
