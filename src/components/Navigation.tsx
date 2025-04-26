@@ -1,6 +1,5 @@
 
 import { cn } from "@/lib/utils";
-import { Avatar, AvatarImage } from "@/components/ui/avatar";
 
 const Navigation = () => {
   const leftMenuItems = [
@@ -30,11 +29,6 @@ const Navigation = () => {
               </li>
             ))}
           </ul>
-
-          {/* Center logo */}
-          <Avatar className="w-12 h-12 shadow-[0_0_30px_rgba(245,249,233,0.3)]">
-            <AvatarImage src="/headshot.jpeg" alt="Hassan Alkhafaji" />
-          </Avatar>
 
           {/* Right menu items */}
           <ul className="flex items-center space-x-8">

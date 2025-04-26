@@ -31,6 +31,13 @@ const Index = () => {
     return () => observerRef.current?.disconnect();
   }, []);
 
+  useEffect(() => {
+    const headshot = document.querySelector(".headshot-container");
+    setTimeout(() => {
+      headshot?.classList.add("animate-flip-in");
+    }, 1000);
+  }, []);
+
   const handleDownloadResume = () => {
     const resumeUrl = "/Hassan_Alkhafaji_Resume.pdf";
     window.open(resumeUrl, "_blank");
@@ -49,7 +56,7 @@ const Index = () => {
             <p className="text-xl md:text-2xl text-secondary/80 mb-8">
               I'm a Software Engineer focused on building on Apple's ecosystem and Autonomous Robotics.
             </p>
-            <div className="md:hidden w-64 h-64 mx-auto mb-8">
+            <div className="headshot-container opacity-0 -translate-x-full md:hidden w-64 h-64 mx-auto mb-8">
               <div className="bg-secondary/10 rounded-full w-full h-full shadow-[0_0_30px_rgba(245,249,233,0.3)]">
                 <img
                   src="/headshot.jpeg"
@@ -66,7 +73,7 @@ const Index = () => {
               Download Resume
             </Button>
           </div>
-          <div className="hidden md:block w-64 h-64">
+          <div className="headshot-container hidden md:block opacity-0 -translate-x-full w-64 h-64">
             <div className="bg-secondary/10 rounded-full w-full h-full shadow-[0_0_30px_rgba(245,249,233,0.3)]">
               <img
                 src="/headshot.jpeg"
@@ -174,7 +181,7 @@ const experience = [
     title: "iOS Engineering Intern",
     company: "Apple Developer Academy",
     period: "2024 - Present",
-    description: "Developing and deploying two full-stack iOS applications (iPhone and iPad) using SwiftUI and Firebase. Implementing Firebase Authentication, Firestore, and Cloud Functions to manage user data and real-time updates, ensuring secure and efficient backend operations with 1000+ underprivileged students. Conducting unit and UI testing to ensure application stability and performance across various iOS devices. Conducted comprehensive unit and UI testing across multiple iOS devices, ensuring application stability, performance, and accessibility by integrating inclusive features like VoiceOver and Dynamic Type.",
+    description: "Developing and deploying two full-stack iOS applications (iPhone and iPad) using SwiftUI and Firebase. Implementing Firebase Authentication, Firestore, and Cloud Functions to manage user data and real-time updates, ensuring secure and efficient backend operations with 1000+ underprivileged students. Conducting unit and UI testing to ensure application stability and performance across various iOS devices. Conducting comprehensive unit and UI testing across multiple iOS devices, ensuring application stability, performance, and accessibility by integrating inclusive features like VoiceOver and Dynamic Type.",
     technologies: ["SwiftUI", "Firebase", "Objective-C"],
   },
   {

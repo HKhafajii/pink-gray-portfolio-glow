@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -26,9 +25,20 @@ export default {
             transform: "translateY(0)",
           },
         },
+        "flip-in": {
+          "0%": {
+            transform: "translateX(-100%) rotateY(90deg)",
+            opacity: "0"
+          },
+          "100%": {
+            transform: "translateX(0) rotateY(0deg)",
+            opacity: "1"
+          }
+        }
       },
       animation: {
         "fade-up": "fade-up 0.5s ease-out forwards",
+        "flip-in": "flip-in 1s cubic-bezier(0.4, 0, 0.2, 1) forwards"
       },
       textShadow: {
         DEFAULT: '2px 2px 4px rgba(0, 0, 0, 0.3)',
