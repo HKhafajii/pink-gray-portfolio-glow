@@ -1,3 +1,4 @@
+
 import {
   Carousel,
   CarouselContent,
@@ -24,7 +25,9 @@ const ProjectCarousel = ({ projects }: ProjectCarouselProps) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ 
     loop: true,
     align: "center",
-    slidesToScroll: 2 
+    slidesToScroll: 2,
+    skipSnaps: false,
+    duration: 20
   });
 
   useEffect(() => {
@@ -43,7 +46,9 @@ const ProjectCarousel = ({ projects }: ProjectCarouselProps) => {
         opts={{ 
           align: "center",
           loop: true,
-          slidesToScroll: 2
+          slidesToScroll: 2,
+          skipSnaps: false,
+          duration: 20
         }}
         className="w-full max-w-5xl"
       >

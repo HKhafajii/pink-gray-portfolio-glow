@@ -24,10 +24,16 @@ const ProjectCard = ({
       )}
     >
       {image && (
-        <img src={image} alt={title} className="w-full h-48 object-cover mb-4 rounded" />
+        <div className="w-full h-48 mb-4 flex items-center justify-center bg-gray-50 rounded overflow-hidden">
+          <img 
+            src={image} 
+            alt={title} 
+            className="w-full h-full object-contain"
+          />
+        </div>
       )}
       <h3 className="text-2xl font-bold text-primary mb-2">{title}</h3>
-      <p className="text-primary/80 mb-4 overflow-y-auto max-h-[320px]">{description}</p>
+      <p className="text-primary/80 mb-4 overflow-y-auto max-h-[160px]">{description}</p>
       <div className="flex flex-wrap gap-2">
         {technologies.map((tech) => (
           <span

@@ -42,13 +42,22 @@ const Index = () => {
       
       {/* Hero Section */}
       <section id="home" className="min-h-[calc(100vh-4rem)] flex items-center justify-center px-4 fade-in opacity-0">
-        <div className="flex items-center gap-8 max-w-4xl w-full">
-          <div className="text-left flex-1">
+        <div className="flex flex-col md:flex-row items-center gap-8 max-w-4xl w-full">
+          <div className="text-center md:text-left flex-1">
             <h1 className="text-6xl font-bold text-secondary mb-4">Hi, I'm</h1>
             <h2 className="text-8xl font-bold text-accent mb-6 drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)]">Hassan Alkhafaji.</h2>
             <p className="text-2xl text-secondary/80 mb-8">
               I'm a Software Engineer focused on building on Apple's ecosystem and Autonomous Robotics.
             </p>
+            <div className="md:hidden w-64 h-64 mx-auto mb-8">
+              <div className="bg-secondary/10 rounded-full w-full h-full shadow-[0_0_30px_rgba(245,249,233,0.3)]">
+                <img
+                  src="/headshot.jpeg"
+                  alt="Hassan Alkhafaji"
+                  className="w-full h-full object-cover rounded-full"
+                />
+              </div>
+            </div>
             <Button 
               onClick={handleDownloadResume}
               className="bg-accent text-black hover:bg-accent/90"
@@ -57,12 +66,14 @@ const Index = () => {
               Download Resume
             </Button>
           </div>
-          <div className="w-64 h-64 bg-secondary/10 rounded-full flex-shrink-0 shadow-[0_0_30px_rgba(245,249,233,0.3)]">
-            <img
-              src="/headshot.jpeg"
-              alt="Your Name"
-              className="w-full h-full object-cover rounded-full"
-            />
+          <div className="hidden md:block w-64 h-64">
+            <div className="bg-secondary/10 rounded-full w-full h-full shadow-[0_0_30px_rgba(245,249,233,0.3)]">
+              <img
+                src="/headshot.jpeg"
+                alt="Hassan Alkhafaji"
+                className="w-full h-full object-cover rounded-full"
+              />
+            </div>
           </div>
         </div>
       </section>
