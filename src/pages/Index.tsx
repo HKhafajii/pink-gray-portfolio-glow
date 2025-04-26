@@ -118,7 +118,7 @@ const Index = () => {
                 If you want to know more about me or my work, or if you would just
                 like to say hello, send me a message. I'd love to hear from you.
               </p>
-              <div className="flex items-center space-x-6">
+              <div className="flex items-center justify-center md:justify-start space-x-6 mb-8 md:mb-0">
                 <a href="https://github.com/HKhafajii" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors">
                   <Github className="w-8 h-8" />
                 </a>
@@ -130,7 +130,7 @@ const Index = () => {
                 </a>
               </div>
             </div>
-            <div className="flex-1 fade-in opacity-0">
+            <div className="w-full md:flex-1 fade-in opacity-0">
               <ContactForm />
             </div>
           </div>
