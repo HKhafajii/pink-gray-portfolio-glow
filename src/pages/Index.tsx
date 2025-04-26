@@ -41,12 +41,12 @@ const Index = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section id="home" className="min-h-[calc(100vh-4rem)] flex items-center justify-center px-4 fade-in opacity-0">
+      <section id="home" className="min-h-[calc(100vh-4rem)] flex items-center justify-center px-6 pb-12 fade-in opacity-0">
         <div className="flex flex-col md:flex-row items-center gap-8 max-w-4xl w-full">
           <div className="text-center md:text-left flex-1">
-            <h1 className="text-6xl font-bold text-secondary mb-4">Hi, I'm</h1>
-            <h2 className="text-8xl font-bold text-accent mb-6 drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)]">Hassan Alkhafaji.</h2>
-            <p className="text-2xl text-secondary/80 mb-8">
+            <h1 className="text-4xl md:text-6xl font-bold text-secondary mb-4">Hi, I'm</h1>
+            <h2 className="text-6xl md:text-8xl font-bold text-accent mb-6 drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)]">Hassan Alkhafaji.</h2>
+            <p className="text-xl md:text-2xl text-secondary/80 mb-8">
               I'm a Software Engineer focused on building on Apple's ecosystem and Autonomous Robotics.
             </p>
             <div className="md:hidden w-64 h-64 mx-auto mb-8">
@@ -60,7 +60,7 @@ const Index = () => {
             </div>
             <Button 
               onClick={handleDownloadResume}
-              className="bg-accent text-black hover:bg-accent/90"
+              className="bg-accent text-black hover:bg-accent/90 mb-8"
             >
               <Download className="w-4 h-4 mr-2" />
               Download Resume

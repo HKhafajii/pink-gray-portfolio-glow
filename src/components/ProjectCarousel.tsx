@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/carousel";
 import { useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
+import { useIsMobile } from "@/hooks/use-mobile";
 import ProjectCard from "./ProjectCard";
 
 interface Project {
@@ -22,10 +23,13 @@ interface ProjectCarouselProps {
 }
 
 const ProjectCarousel = ({ projects }: ProjectCarouselProps) => {
+  const isMobile = useIsMobile();
+  const slidesToScroll = isMobile ? 1 : 2;
+  
   const [emblaRef, emblaApi] = useEmblaCarousel({ 
     loop: true,
     align: "center",
-    slidesToScroll: 2,
+    slidesToScroll,
     skipSnaps: false,
     duration: 20
   });
@@ -46,7 +50,7 @@ const ProjectCarousel = ({ projects }: ProjectCarouselProps) => {
         opts={{ 
           align: "center",
           loop: true,
-          slidesToScroll: 2,
+          slidesToScroll,
           skipSnaps: false,
           duration: 20
         }}
@@ -54,7 +58,7 @@ const ProjectCarousel = ({ projects }: ProjectCarouselProps) => {
       >
         <CarouselContent ref={emblaRef}>
           {projects.map((project) => (
-            <CarouselItem key={project.title} className="md:basis-1/2 lg:basis-1/2 p-4">
+            <CarouselItem key={project.title} className="md:basis-1/2 basis-full p-4">
               <ProjectCard {...project} />
             </CarouselItem>
           ))}
